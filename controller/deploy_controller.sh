@@ -99,7 +99,7 @@ else
 
   # download code
   cd /opt/
-  git clone https://github.com/FeatureBaseDB/Laminoid.git
+  git clone https://github.com/kordless/Laminoid.git
   cd /opt/Laminoid/
 
   # copy files
