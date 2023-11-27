@@ -31,7 +31,7 @@ compute = discovery.build('compute', 'v1', credentials=credentials)
 compute_beta = discovery.build('compute', 'beta', credentials=credentials)
 
 # project and zones
-project = 'sloth-compute'
+project = 'sloth-ai'
 zones = ['us-central1-a']
 
 
