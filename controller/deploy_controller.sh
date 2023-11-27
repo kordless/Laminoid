@@ -71,8 +71,8 @@ else
 fi
 
 # set this to your service account
-SERVICE_ACCOUNT="slothbot@sloth-compute.iam.gserviceaccount.com"
-GC_PROJECT="sloth-compute"
+SERVICE_ACCOUNT="sloth-ai@appspot.gserviceaccount.com"
+GC_PROJECT="sloth-ai"
 
 if [ -f secrets.sh ]; then
    source secrets.sh # truly, a travesty, sets TOKEN=token-[passphrase]
