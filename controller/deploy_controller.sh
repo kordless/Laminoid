@@ -60,7 +60,7 @@ case $ZONE in
 esac
 
 # set this to your service account
-SERVICE_ACCOUNT="sloth-ai@appspot.gserviceaccount.com"
+SERVICE_ACCOUNT="909280153340-compute@developer.gserviceaccount.com"
 GC_PROJECT="sloth-ai"
 
 if [ -f secrets.sh ]; then
