@@ -3,7 +3,7 @@ TYPE=e2-medium
 NAME=controller
 NEW_UUID=$(LC_ALL=C tr -dc 'a-z0-9' </dev/urandom | head -c 4 ; echo)
 
-IP=34.170.34.122
+IP=35.192.137.225
 
 PREEMPTIBLE=" \
 --maintenance-policy=TERMINATE \
@@ -61,7 +61,7 @@ case $ZONE in
 esac
 
 # set this to your service account
-SERVICE_ACCOUNT="sloth-759@sloth-ai.iam.gserviceaccount.com"
+SERVICE_ACCOUNT="sloth-ai@appspot.gserviceaccount.com"
 GC_PROJECT="sloth-ai"
 
 if [ -f secrets.sh ]; then

@@ -32,7 +32,7 @@ compute_beta = discovery.build('compute', 'beta', credentials=credentials)
 
 # project and zones
 project = 'sloth-compute'
-zones = ['us-central1-a','us-east1-b']
+zones = ['us-central1-a']
 
 
 @app.route('/api/instance/list', methods=['GET'])
