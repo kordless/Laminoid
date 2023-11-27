@@ -3,8 +3,6 @@ TYPE=e2-medium
 NAME=controller
 NEW_UUID=$(LC_ALL=C tr -dc 'a-z0-9' </dev/urandom | head -c 4 ; echo)
 
-IP=35.192.137.225
-
 PREEMPTIBLE=" \
 --maintenance-policy=TERMINATE \
 --provisioning-model=SPOT \
@@ -26,9 +24,10 @@ done
 if [ "$PROD_MODE" == "true" ]; then
     unset PREEMPTIBLE
     echo "Production mode enabled..."
-    IP=""
+    IP=35.192.137.225
     echo
 else
+    IP=""
     echo "This instance is preemtible, unless it's started with --prod"
 fi
 
