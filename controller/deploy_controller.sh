@@ -60,16 +60,6 @@ case $ZONE in
         ;;
 esac
 
-# Check if there are any uncommitted changes in the Git repository
-if [[ $(git status --porcelain) ]]; then
-  echo "Error: There are uncommitted changes in the Git repository."
-  echo "Please commit or stash your changes before deploying."
-  exit 1
-else
-  echo "Git repository is up to date. Continuing with deployment..."
-  # Add your deployment script commands here
-fi
-
 # set this to your service account
 SERVICE_ACCOUNT="sloth-ai@appspot.gserviceaccount.com"
 GC_PROJECT="sloth-ai"

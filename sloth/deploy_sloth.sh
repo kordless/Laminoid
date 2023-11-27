@@ -1,5 +1,5 @@
 #!/bin/bash
-TYPE=g2-standard-24
+TYPE=g2-standard-4
 NAME=sloth
 NEW_UUID=$(LC_ALL=C tr -dc 'a-z0-9' </dev/urandom | head -c 4 ; echo)
 
@@ -139,7 +139,7 @@ gcloud compute instances create $NAME-$NEW_UUID \
 $PREEMPTIBLE \
 --service-account=$SERVICE_ACCOUNT \
 --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append \
---accelerator=count=2,type=nvidia-l4 \
+--accelerator=count=1,type=nvidia-l4 \
 --create-disk=auto-delete=yes,boot=yes,device-name=instance-1,image=projects/ml-images/global/images/c0-deeplearning-common-gpu-v20230807-debian-11-py310,mode=rw,size=200,type=projects/$GC_PROJECT/zones/$ZONE/diskTypes/pd-ssd \
 --no-shielded-secure-boot \
 --shielded-vtpm \
