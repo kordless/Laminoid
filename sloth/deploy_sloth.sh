@@ -45,7 +45,7 @@ if [ -z "$ZONE" ]; then
 fi
 
 # set this to your service account
-SERVICE_ACCOUNT="909280153340-compute@developer.gserviceaccount.com"
+SERVICE_ACCOUNT="sloth-759@sloth-ai.iam.gserviceaccount.com"
 GC_PROJECT="sloth-ai"
 
 if [ -f secrets.sh ]; then
