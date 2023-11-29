@@ -1,5 +1,5 @@
 #!/bin/bash
-TYPE=g2-standard-4
+TYPE=g2-standard-8
 NAME=sloth
 NEW_UUID=$(LC_ALL=C tr -dc 'a-z0-9' </dev/urandom | head -c 4 ; echo)
 
@@ -45,7 +45,7 @@ if [ -z "$ZONE" ]; then
 fi
 
 # set this to your service account
-SERVICE_ACCOUNT="sloth-759@sloth-ai.iam.gserviceaccount.com"
+SERVICE_ACCOUNT="909280153340-compute@developer.gserviceaccount.com"
 GC_PROJECT="sloth-ai"
 
 if [ -f secrets.sh ]; then
