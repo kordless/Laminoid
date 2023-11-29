@@ -115,8 +115,8 @@ else
   pip install -r requirements.txt
 
   # download fasttext .bin
-  wget https://storage.googleapis.com/sloth-services/cc.en.300.bin.gz
-  gunzip cc.en.300.bin.gz
+  # wget https://storage.googleapis.com/sloth-services/cc.en.300.bin.gz
+  # gunzip cc.en.300.bin.gz
 
   # restart ngninx
   systemctl restart nginx.service
